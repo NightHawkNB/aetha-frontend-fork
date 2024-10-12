@@ -11,7 +11,10 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      external: ['@tanstack/react-query']
+    }
   },
   server: {
     proxy: {
