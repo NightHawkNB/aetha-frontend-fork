@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      external: ['@tanstack/react-query-devtools']
+      external: ['@tanstack/react-query-devtools', '@tanstack/react-query']
     }
   },
   server: {
